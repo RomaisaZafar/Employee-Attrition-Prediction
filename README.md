@@ -88,3 +88,8 @@ The main goal is to apply machine learning techniques to understand employee att
 
 ## Author
 Machine Learning Project – Employee Attrition Prediction
+## Dashboard Preview
+
+The following screenshot shows the Employee Attrition Prediction dashboard.
+
+![Employee Attrition Dashboard](screenshots/dashboard.png)
