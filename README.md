@@ -93,3 +93,19 @@ Machine Learning Project – Employee Attrition Prediction
 The following screenshot shows the Employee Attrition Prediction dashboard.
 
 ![Employee Attrition Dashboard](screenshots/dashboard.png)
+
+## Model Performance Comparison
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 73.81% | 27.91% | 61.54% | 38.40% |
+| SVM | 86.39% | 48.57% | 43.59% | 45.95% |
+| Decision Tree | 80.61% | 27.50% | 28.21% | 27.85% |
+
+### Best Performing Model
+
+SVM achieved the highest accuracy of 86.39% 
+and the highest F1-score of 45.95%.
+
+Logistic Regression achieved the highest recall 
+of 61.54%.
