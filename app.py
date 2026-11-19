@@ -21,160 +21,51 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-
-/* Main Background */
 .stApp {
     background-color: #f4f7fb;
-    color: #1f2937;
 }
 
-/* Main Headings */
-h1, h2, h3, h4 {
-    color: #17365d !important;
-    font-weight: 700 !important;
+h1 {
+    color: #17365d;
+    font-weight: 700;
 }
 
-/* Normal Text */
-p, li {
-    color: #334155;
+h2, h3 {
+    color: #24476b;
 }
 
-/* Labels */
-[data-testid="stWidgetLabel"],
-[data-testid="stWidgetLabel"] p {
-    color: #17365d !important;
-}
-
-/* Number Input Fields */
-div[data-testid="stNumberInput"] input {
-    background-color: #ffffff !important;
-    color: #17365d !important;
-    -webkit-text-fill-color: #17365d !important;
-    border: none !important;
-}
-
-/* Number Input Container */
-div[data-testid="stNumberInput"] > div {
-    background-color: #ffffff !important;
-    border: 1px solid #cbd5e1 !important;
-    border-radius: 8px !important;
-}
-
-/* Number Input Buttons */
-div[data-testid="stNumberInput"] button {
-    background-color: #ffffff !important;
-    color: #17365d !important;
-}
-
-/* Selectbox Main Container */
-div[data-testid="stSelectbox"] [data-baseweb="select"] > div {
-    background-color: #ffffff !important;
-    border: 1px solid #cbd5e1 !important;
-    border-radius: 8px !important;
-}
-
-/* Selectbox Text */
-div[data-testid="stSelectbox"] [data-baseweb="select"] *,
-div[data-testid="stSelectbox"] [role="combobox"] {
-    color: #17365d !important;
-    -webkit-text-fill-color: #17365d !important;
-}
-
-/* Selectbox Arrow */
-div[data-testid="stSelectbox"] svg {
-    fill: #17365d !important;
-    color: #17365d !important;
-}
-
-/* Dropdown Options */
-[data-baseweb="popover"],
-[role="listbox"] {
-    background-color: #ffffff !important;
-}
-
-[role="option"] {
-    background-color: #ffffff !important;
-    color: #17365d !important;
-}
-
-/* Buttons */
-.stButton button,
-.stFormSubmitButton button {
-    background-color: #17365d !important;
-    color: #ffffff !important;
-    border: none !important;
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    padding: 10px 20px !important;
-}
-
-/* Button Text */
-.stButton button *,
-.stFormSubmitButton button * {
-    color: #ffffff !important;
-}
-
-/* Tabs */
-.stTabs [data-baseweb="tab"] {
-    color: #17365d !important;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* Metrics */
 div[data-testid="stMetric"] {
-    background-color: #ffffff;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #dce5ef;
 }
 
-/* Dataframe */
-div[data-testid="stDataFrame"] {
-    border: 1px solid #dce5ef;
+.stButton button, .stFormSubmitButton button {
+    background-color: #17365d;
+    color: white;
     border-radius: 8px;
+    border: none;
 }
 
-/* Form Border */
-div[data-testid="stForm"] {
-    border: 1px solid #dce5ef;
-    border-radius: 10px;
-    padding: 15px;
+/* Number input */
+[data-testid="stNumberInput"] input {
+    background-color: white !important;
+    color: #17365d !important;
 }
 
-/* Divider */
-hr {
-    border-color: #dce5ef;
+/* Dropdown */
+[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+    background-color: white !important;
+    color: #17365d !important;
 }
 
+.stTabs [data-baseweb="tab"] {
+    font-size: 16px;
+    font-weight: 600;
+}
 </style>
 """, unsafe_allow_html=True)
-/* Input fields */
-[data-testid="stNumberInput"] input {
-    background-color: #ffffff !important;
-    color: #17365d !important;
-    border: 1px solid #cbd5e1 !important;
-}
-
-/* Dropdown fields */
-[data-testid="stSelectbox"] [data-baseweb="select"] > div {
-    background-color: #ffffff !important;
-    color: #17365d !important;
-    border: 1px solid #cbd5e1 !important;
-}
-
-/* Dropdown text */
-[data-testid="stSelectbox"] [data-baseweb="select"] * {
-    color: #17365d !important;
-}
-
-/* Number input buttons */
-[data-testid="stNumberInput"] button {
-    background-color: #ffffff !important;
-    color: #17365d !important;
-}
-
-
 # ==========================================
 # LOAD TRAINED MODELS
 # ==========================================
