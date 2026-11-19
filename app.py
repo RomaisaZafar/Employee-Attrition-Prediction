@@ -12,21 +12,66 @@ st.set_page_config(
 )
 
 # Custom Styling
+
+# Custom Styling
 st.markdown("""
 <style>
+
+/* Main Background */
 .stApp {
     background-color: #f4f7fb;
+    color: #1f2937;
 }
 
-h1 {
-    color: #17365d;
+/* Headings */
+h1, h2, h3, h4 {
+    color: #17365d !important;
     font-weight: 700;
 }
 
-h2, h3 {
-    color: #24476b;
+/* Normal Text */
+p, label, span, li {
+    color: #334155;
 }
 
+/* Widget Labels */
+[data-testid="stWidgetLabel"],
+[data-testid="stWidgetLabel"] p {
+    color: #17365d !important;
+}
+
+/* Input Fields */
+[data-baseweb="input"] input,
+[data-baseweb="select"] > div {
+    background-color: white !important;
+    color: #1f2937 !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Selectbox Text */
+[data-baseweb="select"] * {
+    color: #1f2937 !important;
+}
+
+/* Buttons */
+.stButton button,
+.stFormSubmitButton button {
+    background-color: #17365d;
+    color: white !important;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab"] {
+    font-size: 16px;
+    font-weight: 600;
+    color: #17365d !important;
+}
+
+/* Metrics */
 div[data-testid="stMetric"] {
     background-color: white;
     padding: 20px;
@@ -34,17 +79,6 @@ div[data-testid="stMetric"] {
     border: 1px solid #dce5ef;
 }
 
-.stButton button, .stFormSubmitButton button {
-    background-color: #17365d;
-    color: white;
-    border-radius: 8px;
-    border: none;
-}
-
-.stTabs [data-baseweb="tab"] {
-    font-size: 16px;
-    font-weight: 600;
-}
 </style>
 """, unsafe_allow_html=True)
 
