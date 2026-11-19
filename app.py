@@ -144,6 +144,34 @@ div[data-testid="stNumberInput"] button {
     color: #17365d !important;
 }
 
+/* Fix Streamlit Dropdown Background */
+div[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+/* Fix Dropdown Text */
+div[data-testid="stSelectbox"] [role="combobox"],
+div[data-testid="stSelectbox"] [role="combobox"] * {
+    color: #17365d !important;
+    -webkit-text-fill-color: #17365d !important;
+}
+
+/* Dropdown Arrow */
+div[data-testid="stSelectbox"] svg {
+    fill: #17365d !important;
+    color: #17365d !important;
+}
+
+/* Dropdown Options */
+[role="listbox"] {
+    background-color: #ffffff !important;
+}
+
+[role="option"] {
+    color: #17365d !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
