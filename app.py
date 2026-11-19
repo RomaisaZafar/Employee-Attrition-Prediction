@@ -120,6 +120,30 @@ div[data-testid="stMetric"] {
 }
 
 
+/* Number Input */
+div[data-testid="stNumberInput"] input {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+    -webkit-text-fill-color: #17365d !important;
+}
+
+/* Selectbox */
+div[data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+}
+
+/* Dropdown selected text */
+div[data-testid="stSelectbox"] [role="combobox"] {
+    color: #17365d !important;
+}
+
+/* Number input buttons */
+div[data-testid="stNumberInput"] button {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
