@@ -79,6 +79,47 @@ div[data-testid="stMetric"] {
     border: 1px solid #dce5ef;
 }
 
+/* White Input Fields */
+[data-baseweb="input"] > div {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+[data-baseweb="input"] input {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+}
+
+/* White Dropdown Fields */
+[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+}
+
+[data-baseweb="select"] input {
+    color: #1f2937 !important;
+}
+
+/* Number Input Controls */
+[data-testid="stNumberInput"] button {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+}
+
+/* Predict Button */
+.stButton button,
+.stFormSubmitButton button {
+    background-color: #17365d !important;
+    color: #ffffff !important;
+}
+
+.stButton button p,
+.stFormSubmitButton button p,
+.stButton button span,
+.stFormSubmitButton button span {
+    color: #ffffff !important;
+}
+
+
 </style>
 """, unsafe_allow_html=True)
 
