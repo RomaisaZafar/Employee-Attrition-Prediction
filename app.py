@@ -64,6 +64,44 @@ div[data-testid="stMetric"] {
     font-size: 16px;
     font-weight: 600;
 }
+/* Fix all labels */
+.stApp label,
+.stApp p,
+.stApp h1,
+.stApp h2,
+.stApp h3 {
+    color: #17365d !important;
+}
+
+/* Fix dropdown background and text */
+[data-testid="stSelectbox"] div[data-baseweb="select"] {
+    background-color: white !important;
+    color: #17365d !important;
+}
+
+/* Fix dropdown selected value */
+[data-testid="stSelectbox"] div[data-baseweb="select"] div {
+    color: #17365d !important;
+}
+
+/* Fix number input */
+[data-testid="stNumberInput"] input {
+    background-color: white !important;
+    color: #17365d !important;
+}
+
+/* Fix number input buttons */
+[data-testid="stNumberInput"] button {
+    background-color: white !important;
+    color: #17365d !important;
+}
+
+/* Responsive layout */
+.stMainBlockContainer {
+    max-width: 1200px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 </style>
 """, unsafe_allow_html=True)
 # ==========================================
