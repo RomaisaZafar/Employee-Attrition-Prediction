@@ -149,6 +149,30 @@ hr {
 
 </style>
 """, unsafe_allow_html=True)
+/* Input fields */
+[data-testid="stNumberInput"] input {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+/* Dropdown fields */
+[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+/* Dropdown text */
+[data-testid="stSelectbox"] [data-baseweb="select"] * {
+    color: #17365d !important;
+}
+
+/* Number input buttons */
+[data-testid="stNumberInput"] button {
+    background-color: #ffffff !important;
+    color: #17365d !important;
+}
 
 
 # ==========================================
